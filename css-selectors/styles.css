@@ -1,0 +1,137 @@
+/**/
+
+.synopsis {
+    color: #7e8184;
+    font-style: italic;
+}
+
+
+.button {
+    color: #fff;
+    background-color: #29fd2f;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #0b24fb;
+    border-radius: 5px;
+
+    width: 200px;
+    margin: 20px auto;
+}
+
+.pages {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.call-to-action { /*так как данный класс расположен после другого класса .button то он перекрывает действие первого, но если их поменять местами, то будет наоборот*/
+    font-style: italic;
+    background-color: #0b24fb;
+}
+/*Перекрывание происходит из-за порядка расположения .call-to-action и .button в нашей таблице стилей. 
+Когда в CSS-файле существует два конфликтующих свойства, всегда применяется последнее. 
+Поэтому если мы отправим .call-to-action в начало styles.css, класс .button со свойством background-color будет идти последним, 
+и кнопка останется синей.*/
+
+.synopsis em { /*нужные селекторы потомков. Они позволяют работать только с теми элементами, 
+    которые находятся внутри других элементов. Например, мы можем отредактировать <em> из параграфа .synopsis 
+    с помощью следующего кода в styles.css:*/
+    font-style: normal;
+}
+
+a:link {
+    color: blue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: aqua;
+    text-decoration: underline;
+}
+
+a:active {
+    color: red;
+}
+
+a:visited:hover {
+    color: orange;
+  }
+
+  a:visited:active {
+    color: red;
+  }
+
+/*в html файле поменяли "div" на "a"*, это потреовало применения дополнительных стилей, чтобы можно было управлять кнопками/
+
+/*превращения наших кнопок из <div> в <a href> элементы*/
+
+.button:link,               /* Поменяем это */
+.button:visited {           /* Поменяем это */
+  display: block;           /* Поменяем это */
+  text-decoration: none;    /* Поменяем это */
+
+  color: #FFF;              /* Все остальное остается как есть */
+  background-color: #5995DA;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #5D6063;
+  border-radius: 5px;
+
+  width: 200px;
+  margin: 20px auto;
+}
+
+.button:hover,
+.button:visited:hover {
+  color: #FFF;
+  background-color: #76AEED;
+}
+
+.button:active,
+.button:visited:active {
+  color: #FFF;
+  background-color: #5995DA;
+}
+
+/*Так, а что насчет второй кнопки? Она должна быть желтого цвета, но мы перекрыли это правило кодом из предыдущего раздела.*/
+
+.call-to-action:link,
+.call-to-action:visited {
+  font-style: italic;
+  background-color: #EEB75A;
+}
+
+.call-to-action:hover,
+.call-to-action:visited:hover {
+  background-color: #F5CF8E;
+}
+
+.call-to-action:active,
+.call-to-action:visited:active {
+  background-color: #EEB75A;
+}
+
+p:last-of-type {
+    margin-bottom: 50px;
+}
+
+p:first-of-type {
+    color: #7E8184;
+    font-style: italic;
+}
+
+.page > p:first-of-type {
+    color: #7E8184;
+    font-style: italic;
+}
+
+#button-3 {
+  color: #5D6063;
+}
+
+  /**/
