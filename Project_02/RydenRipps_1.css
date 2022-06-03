@@ -1,0 +1,80 @@
+/* так выглядит комментарий в CSS*/
+
+
+h1 {
+    position: 0;
+    width: 1310px;
+    height: 65px;
+    left: 65px;
+    top: 96px;
+    background: #000000;
+}
+
+h1 em {
+    position: 0;
+    width: 312px;
+    height: 57px;
+    left: 65px;
+    top: 90px;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 57px;
+    color: #FFFFFF;
+    padding: 4px 0px 0px 5px;
+}
+
+img {
+    width: 900px;
+    height: 600px;
+    left: 65px;
+    top: 197px;
+
+    background: url(image-asset2.png);
+}
+
+ul li {
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+
+    color: #000000;
+}
+
+h2 {
+    width: 1310px;
+    height: 49px;
+    left: 65px;
+    top: 1016px;
+    background: #000000;
+}
+
+h2 em {
+    color: #FFFFFF;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46px;
+    padding: 4px 0px 0px 5px;
+}
+
+p {
+    width: 1303px;
+    height: 100px;
+    left: 65px;
+
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+
+    color: #000000;
+}
+
+
+
