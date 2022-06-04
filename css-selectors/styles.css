@@ -132,6 +132,25 @@ p:first-of-type {
 
 #button-3 {
   color: #5D6063;
+  background: url(bg.jpg), url(bullet.jpg) 0 50% no-repeat, url(that.jpg) right no-repeat;
 }
 
-  /**/
+body {
+  background-image: url(theother.jpg), url(that.jpg);
+  /*background-position:
+    top right, /* позиционирует первую картинку */
+    /*bottom left; /* позиционирует вторую картинку */
+  /*background-repeat:
+    no-repeat; применяется к обеим картинкам */
+  /*background:
+    linear-gradient(
+      rgba(255, 0, 0, 0.45), 
+      rgba(255, 0, 0, 0.45)
+    ),url(this.jpg);*/
+  background-blend-mode: difference;
+  background: linear-gradient(yellow, red);
+}
+
+
+
+/**/
