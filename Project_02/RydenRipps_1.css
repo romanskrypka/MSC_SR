@@ -3,7 +3,6 @@
 
 h1 {
     position: 0;
-    width: 1310px;
     height: 65px;
     left: 65px;
     top: 96px;
@@ -45,7 +44,6 @@ ul li {
 }
 
 h2 {
-    width: 1310px;
     height: 49px;
     left: 65px;
     top: 1016px;
@@ -63,7 +61,6 @@ h2 em {
 }
 
 p {
-    width: 1303px;
     height: 100px;
     left: 65px;
 
