@@ -20,7 +20,7 @@ h1 {
 .megafull {
     display: flex;
     margin: 20px;
-    
+    margin-right: 40px;
     border-radius: 30px;
     justify-content: center;
     
@@ -45,5 +45,8 @@ h2, p {
     padding-left: 10px;
 }
 
+.megalight:last-child {
+    margin-right: 0;
+}
 
 /**/
