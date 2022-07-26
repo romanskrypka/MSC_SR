@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu-container {
+    padding: 20px 0;
+    color: #fff;
+    background-color: #0b24fb;
+    display: flex;
+    justify-content: center;
+    /*Обратите внимание на то, как мы добавили свойство justify-content к родительскому элементу, а не напрямую к элементу, 
+    который мы хотим отцентрировать. Во флексбоксе работа с элементами происходит именно так – через контейнеры.*/
+    /*У justify-content также есть и следующие значения: center, flex-start, flex-end, space-around, space-between, space-evenly*/
+    /*flex-start и flex-end. Это должно выровнять меню по левому и правому краю окна браузера соответственно*/
+    /*свойство justify-content позволяет равномерно раскидывать элементы по контейнеру.*/
+    /*Флекс-контейнеры могут позиционировать только элементы, которые являются их потомками: с тем, что внутри этих флекс-элементов, они работать не могут.*/
+    /*Это значит, что группировка флекс-элементов является еще одним инструментом в нашем арсенале создания лэйаутов веб-страниц. 
+    Заключение группы элементов в <div> дает абсолютно другой внешний вид страницы.*/
+}
+
+.menu {
+    width: 900px;
+    display: flex;
+    justify-content: space-between;/*значение space-around распределяет элементы по всей его ширине*/
+    /*Значение space-between работает по похожему принципу, но только добавляет пространство между элементами*/
+    /*border: 1px solid #fff;*/
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+    /*border: 1px solid #fff;*/
+}
+
+.login {
+    margin-left: 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    background-color: #f1eeee;
+    color: #000000;
+}
+
+.header {
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /*У свойства align-items похожие на justify-content значения: center, flex-start (top), flex-end (bottom), stretch, baseline*/
+    /*stretch можно рассмотреть подробнее – оно позволяет отобразить фон каждого элемента*/
+}
+
+.social,
+.logo,
+.subscribe {
+    border: 1px solid #1feeee;
+}
+
+.photo-grid-container {
+    display: flex;
+    justify-content: center;
+}
+
+.photo-grid {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.photo-grid-item {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #fff;
+}
+
+
+
+
+
+
+

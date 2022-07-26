@@ -1,0 +1,130 @@
+
+
+.synopsis {
+    color: #7E8184;
+    font-style: italic;
+}
+
+
+.button {
+    color: #fff;
+    background-color: #29fd2f;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #0b24fb;
+    border-radius: 10px;
+
+    width: 200px;
+    margin: 20px auto;/*совокупность параметров width: 200px; и margin: 20px auto; позволяет отобразить элемент в центре по горизонтали*/
+}
+
+.page {
+    width: 600px;
+    margin: 0 auto;
+    /*Теперь вне зависимости от того, как мы будем менять размер окна нашего браузера, страница будет сохранять ширину в 600 пикселей и выравнивание по центру.*/
+}
+
+.page > p:first-of-type {
+    color: #7E8184;
+    font-style: italic;
+  }
+
+
+.call-to-action {
+    font-style: italic;
+    background-color: #0b24fb;
+    /*Есть пара чрезвычайно важных вещей, связанных с нашей второй кнопкой:*/
+    /*Добавление нового правила font-style к оригинальному правилу .button;*/
+    /*Перекрывание существующего стиля background-color из .button.*/
+    /*Перекрывание происходит из-за порядка расположения .call-to-action и .button в нашей таблице стилей.*/
+    /*Когда в CSS-файле существует два конфликтующих свойства, всегда применяется последнее.*/
+    /*Несколько классов применяются к одному и тому же элементу в равной степени, и за их первоочередность отвечает последовательность правил в selectors.css*/
+}
+
+.synopsis em {/*прописали селекторы потомков, потом ком является селектор em*/
+    font-style: normal;/*Теперь текст внутри тега <em> отображается обычными прописными буквами и поэтому выделяется среди курсива.*/
+  }
+
+a:link {
+    color: blue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: aqua;
+    text-decoration: underline;
+}
+
+a:active {
+    color: red;
+}
+
+
+
+/*Кстати, все эти классы ниже можно использовать и для других элементов. Например, если мы добавим класс .button к любому HTML-элементу, он автоматически превратится в интерактивную кнопку.*/
+.button:link,/* Мы добавили новые псевдоклассы :link и :visited в селектор. Без них наш цвет не перекроет стиль a:link по умолчанию. */
+.button:visited {           
+    display: block;
+    text-decoration: none;
+
+    color: #FFF;              /* Все остальное остается как есть */
+    background-color: #5995DA;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #5D6063;
+    border-radius: 5px;
+
+    width: 200px;
+    margin: 20px auto;
+}
+
+.button:hover,
+.button:visited:hover {
+    color: #FFF;
+    background-color: #76AEED;
+}
+
+.button:active,
+.button:visited:active {
+    color: #FFF;
+    background-color: #5995DA;
+}
+
+.call-to-action:link,
+.call-to-action:visited {
+    font-style: italic;
+    background-color: #EEB75A;
+}
+
+.call-to-action:hover,
+.call-to-action:visited:hover {
+    background-color: #F5CF8E;
+}
+
+.call-to-action:active,
+.call-to-action:visited:active {
+    background-color: #EEB75A;
+}
+
+p:last-of-type {
+    margin-bottom: 50px;
+}
+
+p:first-of-type {
+    color: #7E8184;
+    font-style: italic;
+}
+
+#button-2 {
+    color: #5D6063;
+}
+
+
+
+

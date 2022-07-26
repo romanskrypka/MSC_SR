@@ -1,0 +1,8 @@
+body, h1, ul, li, ol {
+    border: 2px solid green;
+}
+
+
+em, strong, del, ins, s, a {
+    border: 4px solid gray;
+}
