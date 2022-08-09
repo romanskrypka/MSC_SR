@@ -57,9 +57,14 @@ a:hover {
     justify-content: space-between;/*контент в блоке распределился по краям*/
     flex-wrap: wrap;
     box-sizing: content-box;
-    background-color: blueviolet;
     margin: 0;
-    
+    position: absolute;
+    top: 40px;
+}
+
+.texth1 {
+    width: 200px;
+    margin-right: 1000px;
 }
 
 .menu {
@@ -67,6 +72,7 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     box-sizing: content-box;
+    justify-content: right;
     width: 900px;
 
 
@@ -81,8 +87,25 @@ a:hover {
     margin-right: 0;/**/
 }
 
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .hero img {
     width: 100%;
+    background-image: url(image/evian_origins_logo.png);
+}
+
+.hero1 {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 7.3em;
+    position: absolute;
+
 }
 
 .boxRectangle,
