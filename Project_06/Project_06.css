@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*изначально ниже весь css код написан под мобильное,  а уже потом мы добавляем код для планшета и дестопа*/
+.heders {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: left;
+    background: #0000FF;
+    margin: 0;
+    padding: 0;
+}
+
+.heder {
+    width: 374px;
+    height: 99px;
+    padding: 2px;
+}
+
+h1 {
+    padding: 25px;
+    size: 25px;
+    color: #FFFFFF;
+}
+
+p {
+    margin: 2px;
+    padding: 10px;
+    text-align: center;
+}
+
+.plitka {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.plitka1,
+.plitka2,
+.plitka3,
+.plitka4 {
+    width: 330px;
+    height: 165px;
+    border: 5px solid #000000;
+    font-family: 'Helvetica';
+    font-size: 25px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    color: #000000;
+}
+
+
+.footer {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    background: #0000FF;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Макет для мобильных устройств*/
+@media only screen and (max-width: 400px) {
+    body {
+        /*background-color: #29fd2f;*/
+    }
+}
+
+/*Макет для планшетов*/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    body {
+        /*background-color: #f1eeee;*/
+    }
+}
+
+/*Макет для десктопов*/
+@media only screen and (min-width: 961px) and (max-width: 1440px) { 
+    body {
+        /*background-color: red;*/
+    }
+    .plitka1,
+    .plitka2,
+    .plitka3,
+    .plitka4 {
+        width: 600px;
+        height: 300px;
+        border: 5px solid #000000;
+        font-family: 'Helvetica';
+        font-size: 50px;
+        line-height: 57px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin: 5px;
+        color: #000000;
+        margin: 10px;
+    }
+
+    .footer {
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+    .heders {
+        margin-bottom: 50px;
+    }
+}
+
+/*Макет для десктопов*/
+@media only screen and (min-width: 1441px) {    
+    body {
+        /*background-color: blueviolet;*/
+    }
+    .plitka1,
+    .plitka2,
+    .plitka3,
+    .plitka4 {
+        width: 900px;
+        height: 400px;
+        border: 5px solid #000000;
+        font-family: 'Helvetica';
+        font-size: 75px;
+        line-height: 79px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin: 5px;
+        color: #000000;
+        margin: 10px;
+    }
+    .footer {
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+    .heders {
+        margin-bottom: 50px;
+    }
+}
+
+
+
+
