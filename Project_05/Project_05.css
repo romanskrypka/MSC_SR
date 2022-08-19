@@ -88,6 +88,8 @@ a:hover {
 }
 
 .hero {
+    height: 950px;
+    background-size: cover;
     position: relative;
     display: flex;
     align-items: center;
@@ -105,7 +107,7 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
     font-size: 7.3em;
-    position: absolute;
+    /*position: absolute;*/
 
 }
 
