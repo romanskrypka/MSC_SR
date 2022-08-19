@@ -58,7 +58,7 @@ a:hover {
     flex-wrap: wrap;
     box-sizing: content-box;
     margin: 0;
-    position: absolute;
+    /*position: absolute;*/
     top: 40px;
 }
 /*помогла статья сделать позиционирование http://wordsmall.ru/html-i-css/kak-napisat-tekst-poverx-kartinki-css.html*/
@@ -92,11 +92,12 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(image/evian_origins_logo.png);
+    /*background-image: url(image/evian_origins_logo.png);*/
 }
 
 .hero img {
     width: 100%;
+    /*background-image: url(image/evian_origins_logo.png);*/
 }
 
 .hero1 {
@@ -191,59 +192,3 @@ footer {
     padding: 35px;
     height: 140px;
 }
-
-/**/
-/**/
-
-
-
-
-/**/
-
-
-
-
-
-/**/
-
-
-
-
-/**/
-
-
-
-
-
-/**/
-
-
-
-
-
-/**/
-
-
-
-
-
-/**/
-/**/
-
-/**/
-
-
-
-/**/
-
-
-
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
