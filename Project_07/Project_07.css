@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+}
+
+/*изначально ниже весь css код написан под мобильное,  а уже потом мы добавляем код для планшета и дестопа*/
+
+.page {
+    width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.header,
+.footer {
+    display: flex;
+    width: 1440px;
+    height: 160px;
+    background: #FFE138;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    width: 500px;
+    height: 57px;
+    left: 515px;
+    top: 52px;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 57px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.section {
+    width: 1440px;
+    display: flex;
+    padding-left: 18px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    /*нужно попробовать распределение внутренних элементов через бетвин и по бокам задать отступ*/
+}
+
+.content {
+    /*box-sizing: border-box;*/
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 1260px;
+    margin-left: 50px;
+    justify-content: center;
+    /*нужно дать стиль, чтобы внутренние элементы расположились по центру*/
+}
+
+
+.illustration {
+    width: 400px;
+    height: 600px;
+}
+
+h3 {
+    width: 334px;
+    height: 25px;
+}
+
+p {
+    width: 334px;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    /*font-weight: 700;*/
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+}
+
+
+
