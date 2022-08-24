@@ -90,4 +90,55 @@ p {
 }
 
 
+/*Макет для мобильных устройств*/
+@media only screen and (max-width: 400px) {
+    body {
+        background-color: #29fd2f;
+    }
+
+    content {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*Макет для планшетов*/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    body {
+        background-color: #f1eeee;
+    }
+}
+
+/*Макет для десктопов*/
+@media only screen and (min-width: 961px) and (max-width: 1440px) { 
+    body {
+        background-color: red;
+    }
+    
+}
+
+/*Макет для десктопов*/
+@media only screen and (min-width: 1441px) {    
+    body {
+        background-color: blueviolet;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
