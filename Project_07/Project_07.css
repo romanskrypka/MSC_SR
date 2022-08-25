@@ -96,10 +96,61 @@ p {
         background-color: #29fd2f;
     }
 
-    content {
+    .header,
+    .footer {
         display: flex;
-        flex-direction: column;
+        height: 80px;
+        background: #FFE138;
+        align-items: center;
+        justify-content: center;
+}
+
+    h1 {
+        width: 380px;
+        height: 57px;
+        font-family: 'Times New Roman';
+        font-style: normal;
+        font-size: 1.7em;
+        line-height: 1.7em;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000;
     }
+
+
+    .section {
+        /*display: flex;*/
+        flex-direction: column;
+        padding-top: 2px;
+        padding-bottom: 2px;
+
+
+    }
+
+    .content {
+        width: 90%;
+        margin: 0 25px; /* Сокращенная запись для margin-left: 25px; и margin-right: 25px;*/
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+
+    .content__text {
+        padding: 15px;
+    }
+
+    h3 {
+        margin-top: 5px;
+    }
+    
+    p {
+        margin-top: 5px;
+        font-family: 'Times New Roman';
+        font-style: normal;
+        font-size: 1.2em;
+        line-height: 1.2em;
+        color: #000000;
+    }    
+    
 }
 
 /*Макет для планшетов*/
@@ -121,6 +172,48 @@ p {
 @media only screen and (min-width: 1441px) {    
     body {
         background-color: blueviolet;
+    }
+
+    .header,
+    .footer {
+        display: flex;
+        height: 300px;
+        background: #FFE138;
+        align-items: center;
+        justify-content: center;
+}
+
+    h1 {
+        width: 800px;
+        height: 80px;;
+        font-size: 5.7em;
+        line-height: 1.7em;
+    }
+
+
+    .content {
+        width: 90%;
+        margin: 0 25px; /* Сокращенная запись для margin-left: 25px; и margin-right: 25px;*/
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+
+    .content__text {
+        padding: 15px;
+    }
+
+    h3 {
+        margin-top: 5px;
+        font-size: 6.2em;
+    }
+    
+    p {
+        margin-top: 5px;
+        font-family: 'Times New Roman';
+        font-style: normal;
+        font-size: 6.2em;
+        line-height: 1.2em;
+        color: #000000;
     }
     
 }
