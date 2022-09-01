@@ -32,6 +32,7 @@ body {
     margin-bottom: 20px;
 }
 
+/*Здесь начинается форма*/
 .speaker-form {
     background-color: #ffffff;
     border: 1px solid #29fd2f;
@@ -65,7 +66,7 @@ body {
     box-shadow: none;
 }
   
-  .form-row label {
+.form-row label {
     margin-bottom: 15px;
 }
 
