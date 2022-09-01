@@ -132,8 +132,8 @@ h2 {
 
 .form-row input[type='text'] /*:invalid*/,
 .form-row input[type="email"] /*:invalid*/,
-.form-row select,                 /* Эти */
-.form-row textarea {
+.form-row select/*,*/                 /* Эти */
+/*.form-row textarea*/ {
     /*background-color: #ffffff;*/
     /*border: 1px solid #29fd2f;*/
     border-radius: 3px;
@@ -178,8 +178,10 @@ h2 {
     font-size: 14px;            /* Это не будет работать в Chrome и Safari */
     -webkit-appearance: none;   /* Но эта строчка все исправит */
 }
-  
-.form-row textarea {
+
+
+/*textarea - это поле для ввода большого кол-ва текста, у меня его нет*/
+/*.form-row textarea {
     font-family: "Helvetica", "Arial", sans-serif;
     font-size: 14px;
       
@@ -190,7 +192,7 @@ h2 {
     margin-bottom: 10px;
     padding: 7px;
     resize: none;
-}
+}*/
   
 .form-row .instructions {
     color: #0b24fb;
