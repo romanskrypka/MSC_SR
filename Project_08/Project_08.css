@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*border: 1px solid #000000;*/
+}
+
+/*Здесь начинается Хедер в котором меню*/
+header {
+    width: auto;/**/
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;/*контент в блоке распределился по краям*/
+    flex-wrap: wrap;
+    box-sizing: content-box;
+    background: #F8BFC7;
+}
+
+.nav1 {
+    display: flex;
+}
+
+.menu {
+    margin-top: 15px;/**/
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: content-box;
+    justify-content: center;
+    width: auto;
+    padding: auto;
+    margin: auto;
+}
+
+.menu > li {/*Символ ">" означает, что мы берем дочерний селектор li у элемента menu.*/
+    margin-right: 50px;/**/
+    display: inline;/**/
+    font-family: 'Helvetica';
+    font-size: 25px;
+    font-weight: bolder;
+    line-height: 23px;
+    color: #000000;
+}
+
+.menu > li:last-of-type {/*Символ ">" означает, что мы берем дочерний селектор li у элемента menu.*/
+    margin-right: 0;/**/
+}
+
+.texth1 {
+    width: auto;
+}
+
+h1 {
+    font-family: 'Helvetica';
+    font-size: 25px;
+    line-height: 23px;
+    color: #000000;
+    font-weight: bolder;
+}
+
+/*Здесь начинается футер*/
+footer {
+    /*width: auto;*//**/
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;/*контент в блоке распределился по краям*/
+    /*flex-wrap: wrap;*/
+    /*box-sizing: content-box;*/
+    background: #F8BFC7;
+    color: #FFFFFF;
+}
+
+footer > h1 {
+    color: #FFFFFF;
+}
+
+
+/*Здесь начинается основной контент*/
+.scene {
+    background-image: url(image/background.svg);
+    padding: 90px 0 50px 0;
+}
+
+.texth2 {
+    background: #336FD1;
+    border-top: 1px solid #336FD1;
+    padding: 30px;
+    /*border: 1px solid #336FD1;*/
+}
+
+h2 {
+    width: auto;
+    padding: 25px;
+    text-align: center;
+    color: #FEB700;
+    font-family: 'Helvetica';
+    font-size: 50px;
+    line-height: 57px;
+}
+
+
+/*Здесь начинается форма*/
+
+.postalparcel {
+    /*border: 3px solid red;*/
+    /*background-color: #F8BFC7;
+    border-radius: 20px;*/
+    width: 25%;
+    /*padding: 30px;
+    margin: 0 0 40px 50px;*/
+}
+
+.formborder {
+    border: 3px solid #FFFFFF;
+    background-color: #F8BFC7;
+    border-radius: 20px;
+    width: 80%;
+    padding: 30px;
+    margin: 0 0 7px 50px;
+}
+
+.form-row {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 20px;
+    color: #FFFFFF;
+    line-height: 23px;
+
+}
+
+.form-row input[type='text'] /*:invalid*/,
+.form-row input[type="email"] /*:invalid*/,
+.form-row select,                 /* Эти */
+.form-row textarea {
+    /*background-color: #ffffff;*/
+    /*border: 1px solid #29fd2f;*/
+    border-radius: 3px;
+    width: 100%;
+    padding: 7px;
+    font-size: 19px;
+    border: 1px solid #F8BFC7;
+    color: #FFFFFF;
+    box-shadow: none;
+}
+
+.form-row label {
+    margin-bottom: 10px;
+    /*color: #FFFFFF;
+    background-color: #F8BFC7;*/
+}
+
+.legacy-form-row {
+    border: none;
+    margin-bottom: 10px;
+    /*color: #FFFFFF;
+    background-color: #F8BFC7;*/
+}
+
+.legacy-form-row legend {
+    margin-bottom: 5px;
+    /*color: #FFFFFF;
+    background-color: #F8BFC7;*/
+}
+  
+.form-row select {
+    width: 100%;
+    /*padding: 5px;*/
+    font-size: 14px;            /* Это не будет работать в Chrome и Safari */
+    color: #FFFFFF;
+    background-color: #F8BFC7;
+}
+  
+.form-row select {
+    width: 100%;
+    /*padding: 5px;*/
+    font-size: 14px;            /* Это не будет работать в Chrome и Safari */
+    -webkit-appearance: none;   /* Но эта строчка все исправит */
+}
+  
+.form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+      
+    border: 1px solid #29fd2f;
+    border-radius: 3px;
+  
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+}
+  
+.form-row .instructions {
+    color: #0b24fb;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+  
+.form-row .checkbox-label {
+    margin-bottom: 0;
+}
+
+.form-row > input {
+    color: #FFFFFF;
+    background-color: #F8BFC7;
+}
+
+
+/*Здесь начинается кнопка*/
+
+.form-row2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-row2 button {
+    width: auto;
+    font-size: 16px;
+    font-weight: bold;
+  
+    color: #FFFFFF;
+    background-color: #FEB700;
+    border: 5px solid #FFFFFF;
+  
+    border: none;
+    border-radius: 15px;
+  
+    padding: 10px 40px;
+    cursor: pointer;
+}
+  
+.form-row button:hover {
+    background-color: #0b24fb;
+}
+  
+.form-row button:active {
+    background-color: #f1eeee;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
