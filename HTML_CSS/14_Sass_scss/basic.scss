@@ -1,0 +1,106 @@
+.zagolovok {
+    border: 1px solid red;
+
+    h1, h2 {
+        background-color: crimson;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+
+        span {
+            color: chocolate;
+        }
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+}
+
+main {
+    color: darkgreen;
+    
+    article {
+        border: 1px solid black;
+
+        header {
+            border: 1px solid royalblue;
+
+            time {
+                color: deeppink;
+            }
+
+            > h2 {
+                background-color:mediumaquamarine;
+            }
+        }
+    }
+}
+
+header {
+    > h3 {
+        color: darkblue;
+        background-color: gold;
+    }
+
+    > {
+      h4 {
+        color: aqua;
+      }
+      h5 {
+        color: cadetblue;
+      }
+      h6 {
+        color: mediumorchid;
+      }
+    }
+}
+
+/*main > article {
+    border: 1px solid black;
+}*/
+
+/*main > article > header {
+    border: 1px solid royalblue;
+}*/
+
+/*main > article > header > time {
+    color: deeppink;
+}*/
+
+.blog-post {
+    padding: 2em 0;
+
+    & &_header {
+        padding: 1em 0;
+    }
+}
+
+
+a {
+    &:link {
+        text-decoration: none;
+    }
+
+    &:hover {
+        color: purple;
+    }
+
+    &:active {
+        color: rebeccapurple;
+    }
+
+    &:focus {
+        color: brown;
+    }
+
+    &:visited {
+        color: chartreuse;
+    }
+}
+
+
+
+
+
