@@ -1,0 +1,7 @@
+{
+    "compile-hero.disable-compile-files-on-did-save-code": false,
+    "cSpell.language": "en,ru,ru-RU,en-GB,en-US,lorem",
+    "cSpell.enableFiletypes": [
+        "sql"
+    ]
+}
