@@ -1,0 +1,15 @@
+
+.en {
+   color: black;
+   font-weight: bold;
+}
+
+.I {
+   color: darkblue;
+   font-style: italic;
+}
+
+.net {
+   color: darkgreen;
+   background-color:darkorange;
+}
