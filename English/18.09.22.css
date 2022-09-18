@@ -1,15 +1,53 @@
+* {
+   width: 1440px;
+   padding-left: 6px;
+}
 
-.en {
+
+.en, .en1 {
    color: black;
    font-weight: bold;
 }
 
-.I {
+.I, .I1 {
    color: darkblue;
    font-style: italic;
 }
 
-.net {
+.net, .net1 {
    color: darkgreen;
-   background-color:darkorange;
+   /*background-color:darkorange;*/
 }
+
+.naz {
+   margin-bottom: 10px;
+   border-bottom: 10px solid greenyellow;
+}
+
+.stq {
+   border-bottom: 10px solid darkred;
+   margin-bottom: 50px;
+}
+
+.qts {
+   display: flex;
+}
+
+.ru1 {
+   /*margin-right: 10px;*/
+   border: 1px solid black;
+   padding: 7px;
+}
+
+.I1 {
+   /*margin-right: 10px;*/
+   border: 1px solid black;
+   padding: 7px;
+}
+
+.net1 {
+   /*margin-right: 10px;*/
+   border: 1px solid black;
+   padding: 7px;
+}
+
