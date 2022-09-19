@@ -125,3 +125,60 @@ function argu(a, b) {
 }
 
 argu(3, 5);
+var hi = "Привет Мир! / Hello World!";
+document.getElementById("d1").innerHTML = hi;
+
+function out() {
+  var p;
+  p = document.getElementById('out');
+  p.innerHTML = "Hello World!";
+}
+
+function out2() {
+  var p;
+  p = document.getElementById('out2');
+  p.innerHTML += "<b> Hello World! </b>"; //innerHTML вставляет не только данные, но и меняет разметку HTML
+} //!Аналогично out3
+
+
+function out3() {
+  var p;
+  p = document.getElementById('out3');
+  p.innerHTML = p.innerHTML + " Hello World!";
+}
+
+function out4() {
+  var p;
+  p = document.getElementById('out4');
+  p.innerText = p.innerHTML + "<b> Hello World! </b>"; //при применении innerText теги не обрабатываются.
+}
+
+var drop = "<div id='d2'>";
+var drop2 = 13;
+var drop3 = 14;
+var drop4 = "<div id='d3'>";
+
+function out5() {
+  var p;
+  p = document.getElementById('out5'); //p.innerText = p.innerHTML + "<b> Hello World! </b>";//при применении innerText теги не обрабатываются.
+
+  p.insertAdjacentHTML('beforeBegin', drop); //!Добавляет перед первым тегом
+
+  p.insertAdjacentHTML('afterBegin', drop2); //!Добавляет после первого тега, но перед контентом
+
+  p.insertAdjacentHTML('beforeEnd', drop3); //!Добавляет перед вторым тегом, но после контента
+
+  p.insertAdjacentHTML('afterEnd', drop4); //!Добавляет после второго тега
+}
+
+var drop5 = "Hello World Roman!";
+
+function out6() {
+  var p; //добавили переменную p
+
+  p = document.getElementById('out6'); //назначили переменную p = id разметки в html
+
+  p.outerHTML = '<div class="one"><p id="out6"></p></div>'; //Заменили полностью строку
+
+  document.getElementById("out6").innerHTML = drop5; //добавили в строку переменную
+}
