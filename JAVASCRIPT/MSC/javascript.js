@@ -1,10 +1,32 @@
 "use strict"; //обозначает, что мы пишем на стандарте js6.
 
+let x = 5;
+let y = 10;
+
+//function sum(x, y) {
+//  return x + y, console.log(x + y);
+//}
+
 function sum(x, y) {
-  return x + y, console.log(x + y);
+  return x + y;
 }
 
-sum(2, 5);
+
+let z = sum(x, y);
+
+function out2 () {
+  var p;
+  p = document.getElementById('out2');
+  p.innerHTML = z;
+}
+
+function out3 () {
+  var p;
+  p = document.getElementById('out3');
+  p.innerHTML = z;
+}
+
+//sum(2, 5);
 
 console.log("строка".length); //Длина строки хранится в свойстве .length
 

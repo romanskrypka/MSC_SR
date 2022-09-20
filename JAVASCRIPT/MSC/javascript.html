@@ -6,28 +6,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
     </head>
-    <body>
+    <body onload="setTimeout('out2()', 12000)";>
         
 
         <div class="class">
             <button>
-                <div></div>
+                <div id="sum">Кнопка</div>
             </button>
         </div>
+
+        
+        <p id="out2">Тестовый текст</p>
+        <!--<hr>
+        <button onclick="out2 ()">Push</button>-->
+
+        <p id="out3">Тестовый текст</p>
+        <hr>
+        <button onclick="out3 ()">Push</button>
+        
         <!-- Так подключается маленький скрипт прямо в тело HTML страницы -->
         <!--<script>
             alert(1);
         </script>-->
-        
+
         <!-- Подключение скрипта в виде отдельного файла к странице HTML -->
         <script src="javascript.js"></script>
-
-        <p value="dor">Привет</p>
-        <script>
-            value = <p>Пока</p>;
-        </script>
-
-
-
+        
     </body>
 </html>
