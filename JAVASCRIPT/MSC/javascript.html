@@ -6,12 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
     </head>
-    <body onload="setTimeout('out2()', 12000)";>
+    <body onload="setTimeout('out()', 1000)";>
         
 
         <div class="class">
             <button>
-                <div id="sum">Кнопка</div>
+                <div id="out1">Кнопка</div>
             </button>
         </div>
 
@@ -23,6 +23,10 @@
         <p id="out3">Тестовый текст</p>
         <hr>
         <button onclick="out3 ()">Push</button>
+        <div onload="setTimeout('out4()', 1000)";>
+            <p id="out4">Тестовый текст</p>
+        </div>
+        
         
         <!-- Так подключается маленький скрипт прямо в тело HTML страницы -->
         <!--<script>

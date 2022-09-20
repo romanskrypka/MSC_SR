@@ -14,19 +14,32 @@ function sum(x, y) {
 
 let z = sum(x, y);
 
-function out2 () {
+function out2() {
   var p;
   p = document.getElementById('out2');
   p.innerHTML = z;
 }
 
-function out3 () {
+function out3() {
   var p;
   p = document.getElementById('out3');
   p.innerHTML = z;
 }
 
-//sum(2, 5);
+sum(2, 5);
+
+let aa = 15;
+
+function out4() {
+  var p;
+  p = document.getElementById('out4');
+  p.innerHTML = aa;
+}
+
+function out() {
+  out2 ();
+  out4 ();
+}
 
 console.log("строка".length); //Длина строки хранится в свойстве .length
 
