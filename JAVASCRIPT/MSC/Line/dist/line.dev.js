@@ -3,8 +3,8 @@
 //функция запускающая другие функции на html странице. Встроена в параметры body. Параметр, body может запускать только одну функцию, и эта функция создана что-бы обойти это ограничение.
 function out() {
   out2();
-  out3(); //   out4 ();
-  //   out5 ();
+  out3();
+  out4(); //   out5 ();
 } //Простые функции
 
 
@@ -125,3 +125,39 @@ function skipFirstChar(text2) {
 }
 
 console.log(skipFirstChar(text2));
+
+function out4() {
+  var p;
+  p = document.getElementById('out4');
+  p.innerHTML = skipFirstChar(text2);
+} //! Тут зафигачил вывод данных в HTML
+//Оператор (+)
+
+
+var first = "Gleb";
+var second = "Kostin";
+var names = first + " " + second; // "Gleb Kostin"
+
+console.log(names);
+console.log(1 + 9);
+var namess = "Gleb";
+namess += " Kostin"; // то же самое, что и name = name + " Kostin"
+
+console.log(namess); //Практика 10
+
+var day = 15;
+var month = "july";
+
+function dateConcat(day, month) {
+  return day + " " + month;
+}
+
+console.log(dateConcat(day, month)); //Практика 11
+
+var texted = "Космо-истории";
+
+function getExcerpt(texted) {
+  return texted.substring(0, 10) + "...";
+}
+
+console.log(getExcerpt(texted)); //Шаблонные строки

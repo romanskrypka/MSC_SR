@@ -2,7 +2,7 @@
 function out() {
    out2 ();
    out3 ();
-//   out4 ();
+   out4 ();
 //   out5 ();
 }
 
@@ -131,5 +131,52 @@ function skipFirstChar(text2) {
    return text2.substring(1);
 }
 console.log(skipFirstChar(text2));
+
+function out4() {
+   var p;
+   p = document.getElementById('out4');
+   p.innerHTML = skipFirstChar(text2);
+}//! Тут зафигачил вывод данных в HTML
+
+
+//Оператор (+)
+
+let first = "Gleb";
+let second = "Kostin";
+let names = first + " " + second; // "Gleb Kostin"
+console.log(names);
+console.log(1 + 9);
+
+let namess = "Gleb";
+namess += " Kostin"; // то же самое, что и name = name + " Kostin"
+console.log(namess);
+
+//Практика 10
+let day = 15;
+let month = "july";
+
+function dateConcat(day, month) {
+   return day + " " + month;
+}
+console.log(dateConcat(day, month));
+
+//Практика 11
+let texted = "Космо-истории";
+function getExcerpt(texted) {
+   return texted.substring(0, 10) + "...";
+}
+console.log(getExcerpt(texted));
+
+//Шаблонные строки
+
+
+
+
+
+
+
+
+
+
 
 
