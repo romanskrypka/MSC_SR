@@ -1,0 +1,14 @@
+* {
+   margin: 0px;
+   padding-left: 7px;
+}
+
+.qts {
+   display: flex;
+}
+
+.ru1, .I1, .net1 {
+   border: 2px solid darkslategrey;
+   padding-right: 7px;
+   width: 350px;
+}

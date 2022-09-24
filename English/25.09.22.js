@@ -1,3 +1,9 @@
+//функция запускающая другие функции на html странице. Встроена в параметры body. Параметр, body может запускать только одну функцию, и эта функция создана что-бы обойти это ограничение.
+function out() {
+   trPh_ru ();
+   trSe_ru ();
+}
+
 //Перевести фразы
 let trPh_ru01 = "Зарабатывать токены";
 let trPh_en_I_01 = "Earn tokens";
@@ -91,6 +97,180 @@ let trSe_en_22 = "This article is easy to read.";
 let trSe_ru23 = "Невозможно в это поверить!";
 let trSe_en_I_23 = "This it is not to believe!";
 let trSe_en_23 = "Impossible this believe it!";
+
+function trPh_ru () {
+   var p;
+   p = document.getElementById('ru01');
+   p.innerHTML = trPh_ru01;
+   p = document.getElementById('en_I_01');
+   p.innerHTML = "Roman:" + " " + trPh_en_I_01;
+   p = document.getElementById('en_01');
+   p.innerHTML = trPh_en_01;
+
+   p = document.getElementById('ru02');
+   p.innerHTML = trPh_ru02;
+   p = document.getElementById('en_I_02');
+   p.innerHTML = "Roman:" + " " + trPh_en_I_02;
+   p = document.getElementById('en_02');
+   p.innerHTML = trPh_en_02;
+
+   p = document.getElementById('ru03');
+   p.innerHTML = trPh_ru03;
+   p = document.getElementById('en_I_03');
+   p.innerHTML = "Roman:" + " " + trPh_en_I_03;
+   p = document.getElementById('en_03');
+   p.innerHTML = trPh_en_03;
+
+   p = document.getElementById('ru04');
+   p.innerHTML = trPh_ru04;
+   p = document.getElementById('en_I_04');
+   p.innerHTML = "Roman:" + " " + trPh_en_I_04;
+   p = document.getElementById('en_04');
+   p.innerHTML = trPh_en_04;
+
+   p = document.getElementById('ru05');
+   p.innerHTML = trPh_ru05;
+   p = document.getElementById('en_I_05');
+   p.innerHTML = "Roman:" + " " + trPh_en_I_05;
+   p = document.getElementById('en_05');
+   p.innerHTML = trPh_en_05;
+
+   p = document.getElementById('ru06');
+   p.innerHTML = trPh_ru06;
+   p = document.getElementById('en_I_06');
+   p.innerHTML = "Roman:" + " " + trPh_en_I_06;
+   p = document.getElementById('en_06');
+   p.innerHTML = trPh_en_06;
+
+   p = document.getElementById('ru07');
+   p.innerHTML = trPh_ru07;
+   p = document.getElementById('en_I_07');
+   p.innerHTML = "Roman:" + " " + trPh_en_I_07;
+   p = document.getElementById('en_07');
+   p.innerHTML = trPh_en_07;
+
+   p = document.getElementById('ru08');
+   p.innerHTML = trPh_ru08;
+   p = document.getElementById('en_I_08');
+   p.innerHTML = "Roman:" + " " + trPh_en_I_08;
+   p = document.getElementById('en_08');
+   p.innerHTML = trPh_en_08;
+}
+
+function trSe_ru () {
+   var s;
+   s = document.getElementById('ru09');
+   s.innerHTML = trSe_ru09;
+   s = document.getElementById('en_I_09');
+   s.innerHTML = "Roman:" + " " + trSe_en_I_09;
+   s = document.getElementById('en_09');
+   s.innerHTML = trSe_en_09;
+
+   s = document.getElementById('ru10');
+   s.innerHTML = trSe_ru10;
+   s = document.getElementById('en_I_10');
+   s.innerHTML = "Roman:" + " " + trSe_en_I_10;
+   s = document.getElementById('en_10');
+   s.innerHTML = trSe_en_10;
+
+   s = document.getElementById('ru11');
+   s.innerHTML = trSe_ru11;
+   s = document.getElementById('en_I_11');
+   s.innerHTML = "Roman:" + " " + trSe_en_I_11;
+   s = document.getElementById('en_11');
+   s.innerHTML = trSe_en_11;
+
+   s = document.getElementById('ru12');
+   s.innerHTML = trSe_ru12;
+   s = document.getElementById('en_I_12');
+   s.innerHTML = "Roman:" + " " + trSe_en_I_12;
+   s = document.getElementById('en_12');
+   s.innerHTML = trSe_en_12;
+
+   s = document.getElementById('ru13');
+   s.innerHTML = trSe_ru13;
+   s = document.getElementById('en_I_13');
+   s.innerHTML = "Roman:" + " " + trSe_en_I_13;
+   s = document.getElementById('en_13');
+   s.innerHTML = trSe_en_13;
+
+   s = document.getElementById('ru14');
+   s.innerHTML = trSe_ru14;
+   s = document.getElementById('en_I_14');
+   s.innerHTML = "Roman:" + " " + trSe_en_I_14;
+   s = document.getElementById('en_14');
+   s.innerHTML = trSe_en_14;
+
+   s = document.getElementById('ru15');
+   s.innerHTML = trSe_ru15;
+   s = document.getElementById('en_I_15');
+   s.innerHTML = "Roman:" + " " + trSe_en_I_15;
+   s = document.getElementById('en_15');
+   s.innerHTML = trSe_en_15;
+
+   s = document.getElementById('ru16');
+   s.innerHTML = trSe_ru16;
+   s = document.getElementById('en_I_16');
+   s.innerHTML = "Roman:" + " " + trSe_en_I_16;
+   s = document.getElementById('en_16');
+   s.innerHTML = trSe_en_16;
+
+   s = document.getElementById('ru17');
+   s.innerHTML = trSe_ru17;
+   s = document.getElementById('en_I_17');
+   s.innerHTML = "Roman:" + " " + trSe_en_I_17;
+   s = document.getElementById('en_17');
+   s.innerHTML = trSe_en_17;
+
+   s = document.getElementById('ru18');
+   s.innerHTML = trSe_ru18;
+   s = document.getElementById('en_I_18');
+   s.innerHTML = "Roman:" + " " + trSe_en_I_18;
+   s = document.getElementById('en_18');
+   s.innerHTML = trSe_en_18;
+
+   s = document.getElementById('ru19');
+   s.innerHTML = trSe_ru19;
+   s = document.getElementById('en_I_19');
+   s.innerHTML = "Roman:" + " " + trSe_en_I_19;
+   s = document.getElementById('en_19');
+   s.innerHTML = trSe_en_19;
+
+   s = document.getElementById('ru20');
+   s.innerHTML = trSe_ru20;
+   s = document.getElementById('en_I_20');
+   s.innerHTML = "Roman:" + " " + trSe_en_I_20;
+   s = document.getElementById('en_20');
+   s.innerHTML = trSe_en_20;
+
+   s = document.getElementById('ru21');
+   s.innerHTML = trSe_ru21;
+   s = document.getElementById('en_I_21');
+   s.innerHTML = "Roman:" + " " + trSe_en_I_21;
+   s = document.getElementById('en_21');
+   s.innerHTML = trSe_en_21;
+
+   s = document.getElementById('ru22');
+   s.innerHTML = trSe_ru22;
+   s = document.getElementById('en_I_22');
+   s.innerHTML = "Roman:" + " " + trSe_en_I_22;
+   s = document.getElementById('en_22');
+   s.innerHTML = trSe_en_22;
+
+   s = document.getElementById('ru23');
+   s.innerHTML = trSe_ru23;
+   s = document.getElementById('en_I_23');
+   s.innerHTML = "Roman:" + " " + trSe_en_I_23;
+   s = document.getElementById('en_23');
+   s.innerHTML = trSe_en_23;
+}
+
+
+
+
+
+
+
 
 
 
