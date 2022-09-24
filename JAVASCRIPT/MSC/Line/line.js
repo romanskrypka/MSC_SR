@@ -168,14 +168,84 @@ function getExcerpt(texted) {
 console.log(getExcerpt(texted));
 
 //Шаблонные строки
+let multiline = `Это одна
+шаблонная строка
+длиной в ${1+2} строчки`;
+console.log(multiline);
+
+let language = "JavaScript";
+console.log(`Я учу ${language}`);
+//!Шаблонные строки создаются с помощью `обратных кавычек`
+//Шаблонные строки могут занимать несколько строчек
+//!В шаблонных строках возможна интерполяция ${переменных}
+
+//Практика 12
+//Напишите функцию sayHello, чтобы она использовала переменную name в строке "Привет X" с помощью интерполяции.
+
+let namies = "Привет";
+function sayHello(namies) {
+   return   `${namies} X`;
+}
+console.log(sayHello(namies));
+
+//Практика 13
+//Напишите функцию getFullName, чтобы она возвращала имя и фамилию с помощью интерполяции.
+
+let firsts = "Roland";
+let lasts = "Skrynryk";
+function getFullName (firsts, lasts) {
+   return `My name is ${firsts} and my last name ${lasts}`;
+}
+console.log(getFullName (firsts, lasts));
+
+function getFullNames (firsts, lasts) {
+   return `${firsts} ${lasts}`;
+}
+console.log(getFullNames (firsts, lasts));
+
+//Практика 14
+//Напишите функцию spaceOdysseyTagline, чтобы она возвращала строку:
+//An epic drama 
+//of adventure 
+//and exploration
+
+function spaceOdysseyTagline () {
+   return `An epic drama 
+   of adventure 
+   and exploration`;
+}
+console.log(spaceOdysseyTagline ());
+
+//Практика 15
+//Часто в качестве содержимого строк используется HTML-код. Мы будем активно это применять в главах, посвященных DOM.
+//Шаблонные строки идеально подходят для генерации HTML-кода из-за поддержки интерполяции и мультистрок.
+//Напишите функцию renderTableRow, чтобы она возвращала такой HTML:
+//<tr>
+//<td>здесь лейбл</td>
+//<td>здесь значение</td>
+//</tr>
+//Вместо строчек «здесь лейбл» и «здесь значение» должны быть значения, принятые из параметров label и value.
 
 
+let label = "Focus";
+let value = 1090;
+function renderTableRow (label, value) {
+   return `<tr>
+      <td>${label}</td>
+      <td>${value}</td>
+   </tr>`;
+}
+console.log(renderTableRow (label, value));
 
-
-
-
-
-
+//Практика 16
+//Напишите функцию getCapitalized, чтобы она возвращала принятую в параметре word строку написанную с заглавной буквы.
+//То есть превращать "СOZEK" в "Сozek", "сApTeK" в "Сaptek", а "namer" в "Namer".
+//В JS отсутствует такой метод «из коробки», так что вам нужно его придумать, используя сочетание уже изученных строчных методов.
+let word = "СOZEK";
+function getCapitalized (word) {
+   return word[0].toUpperCase() + word.substring(1).toLowerCase();
+}
+console.log(getCapitalized(word));
 
 
 
