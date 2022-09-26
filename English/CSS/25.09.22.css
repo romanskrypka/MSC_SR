@@ -12,3 +12,20 @@
    padding-right: 7px;
    width: 350px;
 }
+
+
+.part1, .part2, .part3, .part4, .Howto1, .examp1 {
+   border: 2px solid darkslategrey;
+   padding-right: 3px;
+   width: 200px;
+   margin-bottom: 3px;
+}
+
+.wew {
+   display: flexbox;
+   width: 200px;
+   border: 2px solid rgb(216, 92, 20);
+
+}
+
+
