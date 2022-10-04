@@ -152,3 +152,32 @@ function logIntoConsole(elements) {
 }
 
 console.log(logIntoConsole(elements)); //Practice - 35
+//Напишите функцию logLootBags, чтобы она перебирала все элементы массива мешков с лутом bags и 
+//выводила каждый из них в консоль (используя console.log).
+
+var bags = [3043, 7658, 2478, 3758];
+
+function logLootBags(bags) {
+  bags.forEach(function (bag) {
+    console.log(bag);
+  });
+}
+
+console.log(logLootBags(bags)); //!Путаница с return - Confusion with return
+//В этом уроке разберем популярную ошибку, встречающуюся при возврате значений из функций, содержащих вызов .forEach().
+//Очень важно называть переменные правильно, чтобы наш код было легче понимать. В случае с итерированием это особенно важно.
+//Если массивы принято называть во множественном числе, то элементы массива в единственном.
+//Например, если массив называется users, то элемент следует называть user; если currencies, то, соответственно, currency и т.д.
+
+var users = ["bantg", "tracheopteryx", "cobie"]; // Массив (множественное число)
+
+users.forEach(function (user) {
+  // Элемент (единственное число)
+  console.log(user);
+});
+var currencies = ["ETH", "DAI", "UST"]; // Массив (множественное число)
+
+currencies.forEach(function (currency) {
+  // Элемент (единственное число)
+  console.log(currency);
+});
