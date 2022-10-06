@@ -264,13 +264,13 @@ console.log (sumOddDrasrs (drasrs));
 
 const currencies2 = ["Bitcoin", "Ethereum", "Tether", "Solana"]
 function getDropdown(currencies2) {
-   console.log(currencies2)
-   let value = <option value="">Выберите валюту</option>;
-   currencies2.forEach(function(value) {
-     value += currencies2;
+   console.log(currencies2);
+   let value = '<option value="">Выберите валюту</option>';
+   currencies2.forEach(function(currency) {
+      value += `<option value="${currency}">${currency}</option>`;
    })
    return value;// Пишите код решения здесь
- }
+}
 
 
 
