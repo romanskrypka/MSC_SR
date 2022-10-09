@@ -3,5 +3,8 @@
     "cSpell.language": "en,ru,ru-RU,en-GB,en-US,lorem",
     "cSpell.enableFiletypes": [
         "sql"
+    ],
+    "cSpell.words": [
+        "колбэк"
     ]
 }

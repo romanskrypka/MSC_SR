@@ -2,14 +2,19 @@
 
 //import { renderTableRows } from "./prices.js"
 //import "./styles.css"
-var data1 = [["Bitcoin1", "47311"], ["Ethereum1", "3407"], ["Solana1", "163"], ["Tether1", "1"]];
 var data = [["Bitcoin", "47311"], ["Ethereum", "3407"], ["Solana", "163"], ["Tether", "1"]];
+var data1 = [["Bitcoin1", "47311"], ["Ethereum1", "3407"], ["Solana1", "163"], ["Tether1", "1"]];
 /* Для каждого ряда, полученного в параметре rows, функция renderTableRows должна возвращать следующий HTML:
 <tr>
   <td>название криптовалюты здесь</td>
   <td>стоимость криптовалюты здесь</td>
 </tr> 
 */
+//? как функция rows узнала, что брать данные нужно из массива data?
+//Мы передаем массив data в функцию в файле index.js. А rows при объявлении функции - это просто абстракция - условный х, 
+//на место которого можно передать что угодно. При объявлении функции мы просто сообщаем ей, 
+//когда пишем function renderDataRows(rows), что ей должен прийти в круглые скобки аргумент. 
+//И она его ждет при вызове. Если ничего не передать - будет выброшена ошибка.
 
 function renderTableRows(rows) {
   console.log(rows);
@@ -17,9 +22,8 @@ function renderTableRows(rows) {
   rows.forEach(function (row) {
     console.log(row);
     xxx += "<tr>\n         <td>".concat(row[0], "</td>\n         <td>").concat(row[1], "</td>\n      </tr>");
-  }); //нужно создать массив row?
-
-  return xxx; // Пишите код решения здесь
+  });
+  return xxx;
 } //?Пример из другого проекта
 
 /*function getDropdown(currencies) {
@@ -30,6 +34,9 @@ function renderTableRows(rows) {
    })
    return value;// Пишите код решения здесь
 }*/
+//?Почему ниже отработали оба вывода в html?
+//Потому, что наша колбэк функция function renderTableRows(rows) обрабатывает все поступающие ранее массивы data и data1
+//А потом при объявлении html переменной мы указываем что она равна, этой самой колбэк функции
 
 
 var html = renderTableRows(data);
