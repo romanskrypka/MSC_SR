@@ -1,0 +1,2 @@
+//! Объекты - objects 
+"use strict";
