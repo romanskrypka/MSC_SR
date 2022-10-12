@@ -222,9 +222,12 @@ function getSizes(words) {
   return words.map(function (word) {
     return word.length;
   });
-}
+} //console.log(tx.isArray())
 
-console.log(getSizes(words)); //! Practice - 47
+
+console.log(getSizes(words, [0])); //точно ли тип данных приходит array в функцию - внутри функции лог прописать - console.log(tx.isArray()) и посмотреть. 
+//И еще я вижу функция объявлена с двумя параметрами, а вызываем ее с одним
+//! Practice - 47
 //Напишите функцию getWithSpaces, чтобы она возвращала массив из двух элементов:
 //— строки, составленной из слов массива strings, соединенных пробелами;
 //— длины этой строки.
