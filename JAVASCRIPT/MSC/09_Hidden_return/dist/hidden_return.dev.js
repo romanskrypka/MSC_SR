@@ -64,9 +64,12 @@ function triple(value2) {
 triple(2); // 6
 
 triple(3); // 9
-//const triple = value2 => value2 * 3;
-//! Practice - 61
+
+var triple2 = function triple2(value2) {
+  return value2 * 3;
+}; //! Practice - 61
 //Напишите функцию multiply без использования return, чтобы она возвращала результат умножения двух своих параметров.
+
 
 var multiply = function multiply(a, b) {
   return a * b;
