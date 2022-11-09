@@ -120,10 +120,56 @@ h3:hover {/* TODO - событийный селектор. Работает пр
 img {
    transform: scale(1);
    transition: 2s all;
+   border: 5px solid pink;
 }
  img:hover {
    transform: scale(1.3);
- }
+}
+.img-center {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+ul {
+   list-style: none; /* TODO убираем стили маркеров*/
+   margin: 0 auto; /* TODO выравниваем меню по центру и убираем все лишние отступы, если таковые имеются, так как если мы их не убираем, то браузер может отступы добавить по своему усмотрению*/
+}
+
+a {
+   text-decoration: none; /* TODO ссылки будут без нижнего подчёркивания*/
+   font-family: Georgia; /* TODO используем конкретный шрифт*/
+   transition: .5s linear; /* TODO переход в 0.5 секунды из одного состояния в другое*/
+}
+
+.main-menu {
+   display: block; /* TODO отображаем как отдельный блок*/
+   width: 660px; /* TODO фиксированная ширина блока*/
+   margin: 0 auto 30px; /* TODO отступы от внешних краёв блока*/
+}
+
+.two ul {
+   background: #D4E7EE;
+   overflow: hidden; /* TODO если меню будет вылезать за пределы экрана, оно будет пропадать*/
+   padding: 0; /* TODO убрал внутренние отступы от границ блока*/
+}
+
+.two li {
+   float: left; /* TODO выравнивание по левому краю, и делает список в одну строчку из вертикали переводит в горизонталь*/
+}
+
+.two a {
+   display: block;
+   padding: 1em;
+   border-right: 1px solid #ADC0CE; /* TODO ссылка будет как кнопка*/
+   background: rgba(173, 192, 206,.3); /* TODO первые три блока цифр это цвет, последняя цифра означает прозрачность. Значение указывается от 0 до 1, где 0 это полностью прозрачный элемент, а 1 не прозрачный*/
+   color: #29838C
+}
+
+.two a:hover {
+   background: #ADC0CE; /* TODO цвет самой ссылки при наведении курсором*/
+}
+
 
 /* */
 /* TODO  */
