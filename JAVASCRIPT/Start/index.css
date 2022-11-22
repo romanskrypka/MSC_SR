@@ -1,4 +1,5 @@
 /*! http://htmlbook.ru/css*/
+/** https://html5book.ru/css-css3/*/
 
 /*? Три уровня CSS */
 /* CSS позволяет задавать не только внешний вид элементов страницы, но и их расположение*/
@@ -168,6 +169,35 @@ a {
 
 .two a:hover {
    background: #ADC0CE; /* TODO цвет самой ссылки при наведении курсором*/
+}
+
+.toloka a {
+   text-decoration: none;
+   border-bottom: 2px dashed darkorchid;
+   padding-bottom: 3px;
+}
+
+.toloka a:hover {
+   text-decoration: underline;
+}
+
+a.calendar {
+   text-decoration: none;
+   display: inline-block;
+   padding: 5px 10px;
+   margin: 0 20px;
+   transition: .3s ease-in-out;
+}
+
+.calendar {
+   color: #BA7D67;
+   border: 2px solid transparent;
+}
+
+.calendar:hover {
+   border: 2px solid #BA7D67;
+   background-color: #29838C;
+   color: white;
 }
 
 
