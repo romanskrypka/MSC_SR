@@ -200,6 +200,19 @@ a.calendar {
    color: white;
 }
 
+table {
+   background: maroon;/*цвет фона таблицы*/
+   color: white;/*Цвет текста*/
+   border-collapse: collapse; /*Убирает двойные ячейки между ячейками*/
+   border: 5px double #000; /*рамка вокруг таблицы*/
+}
+
+td, th {
+   background: navy;/*Цвет фона ячеек*/
+   padding: 5px;/*Поля вокруг текста*/
+   border: 1px solid #fff;/*Рамка вокруг ячеек*/
+   text-align: center;/*выравнивание текса по центру*/
+}
 
 /* */
 /* TODO  */
