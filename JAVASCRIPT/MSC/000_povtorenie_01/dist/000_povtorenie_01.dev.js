@@ -4,7 +4,7 @@ function sum(a, b) {
   return a + b;
 }
 
-var a = 15;
+var a = 20;
 var b = 20;
 var z = a + b;
 console.log(sum(a, z)); // вернёт 50
